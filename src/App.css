@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: navy;
+}
+.movieContainer
+{
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.contentContainer
+{
+    background-color:mediumpurple;
+    border-radius: 10px;
+    position: relative;
+    font-weight: bolder;
+}
+.contentContainer:hover .posterContainer
+{
+    opacity: 0.3;
+}
+.movieContent
+{
+    position: absolute;
+    color:white;
+    display: none;
+    padding:20px;
+    z-index: 999;
+
+    word-wrap: break-word;
+}
+.contentContainer:hover .movieContent
+{
+    display: block;
+}
+.moviePoster
+{
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.titleContainer
+{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
